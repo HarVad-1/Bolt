@@ -1,0 +1,18 @@
+body{
+    background-image: url(./images/compassbgimg.jpg);
+    background-size: 100%;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 125px;
+}
+.form-floating{
+    max-width: 500px;
+}
+input{
+    height: 30px;
+}
+/* .password,.mail{
+    display: inline-flex;
+} */
