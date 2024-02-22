@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+            padding: 0;
+            font-family: "DM Sans", sans-serif;
+            background-image: url('compassbgimg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.details-container {
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-container h2 {
+    color: #333;
+}
+
+.details-container input,
+.details-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.details-container input[type="submit"] {
+    background-color: #4facfe;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.details-container input[type="submit"]:hover {
+    background-color: #00f2fe;
+}
