@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Upload PDF File</title>
+    <style>
+        body {
+            font-family: "DM Sans", sans-serif;
+            background-image: url(./compassbgimg.jpg);
+            background-size: 100%;
+        }
+
+        #uploadContainer {
+            width: 300px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        #fileInput {
+            display: none;
+            /* Hide the actual file input */
+        }
+
+        #customUpload {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        h1{
+            font-size: 150px;
+            color: blanchedalmond;
+        }
+        .para>p{
+            font-size: 24px;
+            color: blanchedalmond;
+            max-width: 800px;
+        }
+        label{
+            font-size: 16px;
+            color: blanchedalmond;
+        }
+        p{
+            color: blanchedalmond;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Medications,</h1>
+    <div class="para">
+        <p>Inorder to have a clear picture of your health condition,we need to go through all your previous medical prescriptions.</p>
+    </div>
+    <p>"Medications are vital for managing health conditions, alleviating symptoms, and improving quality of life. Proper adherence ensures optimal treatment outcomes and prevention of complications."</p>
+    <br><br><br><br>
+    <div id="uploadContainer">
+        <label for="fileInput" id="customUpload">Choose PDF Files</label>
+        <input type="file" id="fileInput" accept=".pdf">
+    </div>
+</body>
+
+</html>
