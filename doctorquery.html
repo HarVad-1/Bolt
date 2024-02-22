@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Patient Data</title>
+  <link rel="stylesheet" href="doctorquery.css">
+</head>
+<body>
+    <div class="details-container">
+        <h1>Doctor Data</h1>
+        <p>Would you like to edit your data?</p>
+        <div class="options">
+            <button type="button" onclick="goToDoctorDetails()">Yes</button>
+            <button type="button" onclick="goToDoctor()">No</button>
+        </div>
+    </div>
+</body>
+<script>
+    function goToDoctorDetails() {
+        window.location.href = "doctordetails.html"; 
+      }
+      
+      function goToDoctor() {
+        window.location.href = "doctor.html"; 
+      }      
+</script>
+</html>
