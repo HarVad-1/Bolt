@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('compassbgimg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            background-color: blanchedalmond; 
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 350px;
+            max-width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background-color: transparent;
+            transition: border-bottom-color 0.3s;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+        .login-container input[type="email"]:focus,
+        .login-container input[type="password"]:focus {
+            outline: none;
+            border-bottom-color: #4facfe;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #4facfe;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #00f2fe;
+        }
+        .login-container p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="./patientquery.html">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+</div>
+
+</body>
+</html>
